@@ -18,7 +18,7 @@ public class HomeWork4Tests {
         //Configuration.browserSize = "1720x880";
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        //Configuration.holdBrowserOpen = true;
         //Configuration.timeout = 5000; // default 400
     }
     @Test
