@@ -15,11 +15,10 @@ public class HomeWork4Tests {
 
     @BeforeAll
     static void beforeAll(){
-        //Configuration.browserSize = "1720x880";
+        Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
-        //Configuration.holdBrowserOpen = true;
-        //Configuration.timeout = 5000; // default 400
+
     }
     @Test
     void gitHubSoftAssertions(){
