@@ -18,6 +18,7 @@ public class HomeWork4Tests {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
+        Configuration.holdBrowserOpen = true;
 
     }
     @Test
@@ -44,6 +45,12 @@ public class HomeWork4Tests {
 
 
     }
-
+    @Test
+    void gitHubSolutionsEnterprise(){
+        open("/");
+        $("div.HeaderMenu--logged-out").$(byText("Solutions")).hover();
+        $("div.header-menu-wrapper").$(byText("Enterprise")).click();
+        $("h1.Primer_Brand__Heading-module__Heading___IVpmp").shouldHave(text("The AI-powered developer platform."));
+    }
 
 }
