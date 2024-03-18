@@ -23,7 +23,6 @@ public class HomeWork4Tests {
     @Test
     void gitHubSoftAssertions(){
         open("/");
-        //$(data-target="qbsearch-input.hotkeyIndicator").click();
         $(byText("Search or jump to...")).click();
         $(".QueryBuilder-InputWrapper #query-builder-test").setValue("selenide").pressEnter();
         $("div[data-testid='results-list']").$("div.search-title a").click();
