@@ -1,5 +1,3 @@
-//package tests;
-
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -18,7 +16,7 @@ public class HomeWork4Tests {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
 
     }
     @Test
